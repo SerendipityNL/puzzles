@@ -1,8 +1,8 @@
-from pathlib import Path
+from Modules import *
 
 print( 'Running solution 02' )
 
-input = list(map(int, Path( 'day01_input1.txt' ).read_text().splitlines()))
+input = files.loadAs('day01_input1.txt', int )
 
 encountered = list( [0] )
 list_length = len( input );
